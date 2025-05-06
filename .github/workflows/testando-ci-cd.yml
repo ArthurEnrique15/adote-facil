@@ -1,0 +1,23 @@
+name: teste CI/CD
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Instalar dependências do backend
+        run: |
+          cd backend
+          npm install
+
+      - name: Executar testes com Jest
+        run: |
+          cd backend
+          npm test -- --coverage

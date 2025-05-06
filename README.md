@@ -80,3 +80,5 @@ docker compose up
 ```
 
 Em seguida, basta acessar a url http://localhost:3000 para ter acesso à plataforma (caso tenha trocado a porta de execução do frontend, altere o 3000 para a porta no qual o frontend está executando).
+
+Adicionando mais uma linha p testar o PR
